@@ -1,0 +1,5 @@
+#Ignore directories
+
+/next
+/node_modules
+/public
