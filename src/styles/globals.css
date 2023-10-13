@@ -6,6 +6,8 @@
   --light-green: rgba(0, 198, 94, 0.3);
   --light-gray: rgba(247, 247, 247, 1);
   --medium-gray: rgba(218, 220, 220, 1);
+  --white: rgba(255,255,255,1);
+  --black: rgba(0,0,0,1);
 }
 *,
 *::after,

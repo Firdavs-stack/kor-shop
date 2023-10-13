@@ -1,10 +1,22 @@
 .categoryItem {
-  position: relative;
+    padding: 6px 0;
   top: 0;
   left: 0;
+  border-radius: 10px;
+  background-color: var(--white);;
 }
 .subcategories {
+    display: grid;
+   opacity: 0;
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 105%;
+  padding:0 25px;
+  transition: opacity 0.1s ease-in-out;
+}
+.categoryItem.active .subcategories{
+    opacity: 1;
+}
+.subcategoryItem{
+    padding: 6px 0;
 }

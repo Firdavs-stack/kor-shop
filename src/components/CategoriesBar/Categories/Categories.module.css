@@ -1,9 +1,15 @@
 .categories {
-  display: none;
+    display: grid;
+
+  opacity: 0;
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 0;
+  padding: 25px;
+  transition: opacity 0.08s ease-in-out;
 }
 .categories.active {
-  display: block;
+
+  opacity: 1;
+
 }

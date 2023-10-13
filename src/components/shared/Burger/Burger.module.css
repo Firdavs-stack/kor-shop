@@ -5,7 +5,7 @@
   height: auto;
 }
 .burger .line {
-  background-color: #000;
+  background-color: var(--black);;
   border-radius: 1.5px;
   height: 3px;
 }
