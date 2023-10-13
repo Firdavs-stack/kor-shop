@@ -1,17 +1,18 @@
-.burger{
-    display: grid;
-    gap: 5px;
-    width: 20px;
-    height: auto;
+.burger {
+  display: grid;
+  gap: 5px;
+  width: 20px;
+  height: auto;
 }
-.burger .line{
-    background-color: #000;
-    border-radius: 1.5px;
-    height: 3px;
+.burger .line {
+  background-color: #000;
+  border-radius: 1.5px;
+  height: 3px;
 }
-.burger .line:first-child,.line:nth-child(2){
-    width: 100%;
+.burger .line:first-child,
+.line:nth-child(2) {
+  width: 100%;
 }
-.burger .line:last-child{
-    width: 60%;
+.burger .line:last-child {
+  width: 60%;
 }

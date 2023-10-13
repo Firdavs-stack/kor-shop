@@ -1,24 +1,23 @@
-.searchBox{
-    width:350px;
-    height: 40px;
-    border-radius: 18px;
-    padding: 0 0 0 15px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.searchBox {
+  width: 350px;
+  height: 40px;
+  border-radius: 18px;
+  padding: 0 0 0 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.searchBox input{
-    outline: none;
-
+.searchBox input {
+  outline: none;
 }
-.searchBox svg{
-    width: 15px;
-    height: 15px;
+.searchBox svg {
+  width: 15px;
+  height: 15px;
 }
-.searchBox button{
-    height: 100%;
-    padding: 9px 24px;
-    border-radius:  0 18px 18px 0;
-background-color: var(--medium-gray);
+.searchBox button {
+  height: 100%;
+  padding: 9px 24px;
+  border-radius: 0 18px 18px 0;
+  background-color: var(--medium-gray);
 }

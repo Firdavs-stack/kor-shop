@@ -1,3 +1,6 @@
-.catBar{
-    background-color: var(--light-gray);
+.catBar {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: var(--light-gray);
 }

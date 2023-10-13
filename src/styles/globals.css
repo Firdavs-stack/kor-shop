@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-:root{
-  --light-green: rgba(0, 198, 94,0.3);
+:root {
+  --light-green: rgba(0, 198, 94, 0.3);
   --light-gray: rgba(247, 247, 247, 1);
   --medium-gray: rgba(218, 220, 220, 1);
 }
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }

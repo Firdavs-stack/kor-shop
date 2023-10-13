@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "../shared/Logo/Logo";
 import styles from "./Navbar.module.css";
-import classNames from 'classnames';
+import classNames from "classnames";
 import { useRouter } from "next/router";
 import Container from "../shared/Logo/Container/Container";
 
@@ -17,16 +17,25 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <Container>
-      <div className={classNames('flex items-center justify-between w-full h-16',styles.rightBlock)}>
-        <Logo />
-        <ul className={classNames('navbar__menu flex justify-between gap-10 font-medium h-full',styles.menu)}>
-          {menuLinks.map((item) => (
-            <li key={item.label} className={classNames('h-full flex justify-center items-center px-4 cursor-pointer',router.pathname==item.href ? styles.active : false)}>
-              <Link href={item.href}>{item.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+        <div className={classNames("flex items-center justify-between w-full h-16", styles.rightBlock)}>
+          <Logo />
+          <ul
+            className={classNames(
+              "navbar__menu flex justify-between gap-10 font-medium h-full",
+              styles.menu,
+            )}>
+            {menuLinks.map((item) => (
+              <li
+                key={item.label}
+                className={classNames(
+                  "h-full flex justify-center items-center cursor-pointer",
+                  router.pathname == item.href ? classNames(styles.active, "px-4") : false,
+                )}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Container>
     </nav>
   );

@@ -9,24 +9,26 @@ const nextConfig = {
         {
           loader: "@svgr/webpack",
           options: {
-            svgoConfig: { plugins: [
-              {
-                name: 'preset-default',
-                params: {
-                  overrides: {
-                    // disable plugins
-                    removeViewBox: false,
+            svgoConfig: {
+              plugins: [
+                {
+                  name: "preset-default",
+                  params: {
+                    overrides: {
+                      // disable plugins
+                      removeViewBox: false,
+                    },
                   },
                 },
-              },
-            ], },
+              ],
+            },
           },
         },
       ],
     });
 
     return config;
-  }
+  },
 };
 
 module.exports = nextConfig;
