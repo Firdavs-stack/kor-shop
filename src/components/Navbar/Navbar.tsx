@@ -3,6 +3,7 @@ import Logo from "../shared/Logo/Logo";
 import styles from "./Navbar.module.css";
 import classNames from 'classnames';
 import { useRouter } from "next/router";
+import Container from "../shared/Logo/Container/Container";
 
 const Navbar = () => {
   const router = useRouter();
@@ -14,8 +15,9 @@ const Navbar = () => {
     { label: "Контакты", href: "/contacts" },
   ];
   return (
-    <nav className='navbar flex items-center justify-between w-full px-6 h-16'>
-      <div className={classNames('flex justify-between items-center w-full h-full',styles.rightBlock)}>
+    <nav className='navbar'>
+      <Container>
+      <div className={classNames('flex items-center justify-between w-full h-16',styles.rightBlock)}>
         <Logo />
         <ul className={classNames('navbar__menu flex justify-between gap-10 font-medium h-full',styles.menu)}>
           {menuLinks.map((item) => (
@@ -25,6 +27,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+      </Container>
     </nav>
   );
 };
