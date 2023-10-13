@@ -15,10 +15,10 @@ const CategoriesBar = () => {
   };
 
   return (
-    <div onClick={handleModalClick} className={classNames(styles.catBar, "h-16 cursor-pointer")}>
+    <div className={classNames(styles.catBar, "h-16 cursor-pointer")}>
       <Container>
         <div className='flex justify-between items-center w-full h-full'>
-          <Burger />
+          <Burger onClick={handleModalClick} isActive={isModalOpen}/>
           <SearchBox />
           <Categories isOpen={isModalOpen} />
         </div>

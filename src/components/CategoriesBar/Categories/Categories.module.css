@@ -1,12 +1,14 @@
 .categories {
     display: grid;
-
+  background-color: var(--white);;
   opacity: 0;
   position: absolute;
-  top: 105%;
+  top: 100%;
   left: 0;
   padding: 25px;
   transition: opacity 0.08s ease-in-out;
+  border-radius: 10px;
+  z-index: 1;
 }
 .categories.active {
 
