@@ -5,6 +5,7 @@ import CategoriesBar from "@/components/CategoriesBar/CategoriesBar";
 import Header from "@/components/Header/Header";
 import ContentBox from "@/components/ContentBox/ContentBox";
 import Footer from "@/components/Footer/Footer";
+import Container from "@/components/shared/Logo/Container/Container";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -18,11 +19,13 @@ export default function Home() {
       <Header/>
       </header>
       <div className='content-box'>
-        <h1 className="text-center text-3xl">Интернет магазин</h1>
+        <Container>
+        <h1 className="text-center text-3xl mb-5">Интернет магазин</h1>
         <ContentBox title='Популярные товары' items={firstitems}/>
         <ContentBox title='Популярные товары' items={firstitems}/>
         <ContentBox title='Популярные товары' items={firstitems}/>
         <ContentBox title='Популярные товары' items={firstitems}/>
+        </Container>
       </div>
       <Footer/>
     </main>

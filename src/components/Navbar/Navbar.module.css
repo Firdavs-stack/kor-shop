@@ -2,3 +2,13 @@
   background-color: var(--light-green);
   font-weight: 600;
 }
+.rightBlock{
+  display: grid;
+  grid-template-columns: auto minmax(auto,800px);
+}
+
+@media (max-width: 812px){
+.menu{
+  gap: unset;
+}
+}

@@ -6,7 +6,6 @@
   height: auto;
   padding: 5px;
 }
-
 .burger.active .line:last-child{
   opacity: 0;
 }

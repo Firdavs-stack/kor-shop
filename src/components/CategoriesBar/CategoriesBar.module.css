@@ -5,3 +5,10 @@
   background-color: var(--light-gray);
   margin-bottom: 30px;
 }
+.barInner{
+  display: grid;
+  grid-template-columns: auto minmax(auto,700px);
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
