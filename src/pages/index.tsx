@@ -7,7 +7,7 @@ import ContentBox from "@/components/ContentBox/ContentBox";
 import Footer from "@/components/Footer/Footer";
 import Container from "@/components/shared/Logo/Container/Container";
 import classNames from "classnames";
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function Home() {
     { label: "Рис", body: "Офигенный рис", price: "Дорого" },
   ];
   return (
-    <main className={classNames(raleway.className,styles.main)}>
+    <main className={classNames(raleway.className, styles.main)}>
       <header>
         <Navbar />
         <CategoriesBar />

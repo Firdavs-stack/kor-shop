@@ -1,3 +1,6 @@
+.footer {
+  width: 100%;
+}
 .footerInner {
   padding: 10px 0;
   display: flex;
@@ -12,4 +15,14 @@
 .socialBox {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 430px) {
+  .footerInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
