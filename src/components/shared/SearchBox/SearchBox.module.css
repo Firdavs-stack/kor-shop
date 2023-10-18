@@ -12,6 +12,7 @@
 }
 .searchBox input {
   outline: none;
+  background:unset;
 }
 .searchBox svg {
   width: 15px;

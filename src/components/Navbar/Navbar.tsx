@@ -15,7 +15,7 @@ const Navbar = () => {
     { label: "Контакты", href: "/contacts" },
   ];
   return (
-    <nav className='navbar'>
+    <nav className={styles.navbar}>
       <Container>
         <div className={classNames("flex items-center justify-between w-full h-16", styles.rightBlock)}>
           <Logo />
