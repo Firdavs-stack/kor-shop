@@ -2,13 +2,37 @@
   background-color: var(--light-green);
   font-weight: 600;
 }
-.rightBlock{
+.menu {
+  display: flex;
+}
+.mobileMenu {
+  display: none;
+}
+.rightBlock {
   display: grid;
-  grid-template-columns: auto minmax(auto,800px);
+  grid-template-columns: auto minmax(auto, 800px);
 }
 
-@media (max-width: 812px){
-.menu{
-  gap: unset;
+@media (max-width: 812px) {
+  .menu {
+    gap: unset;
+  }
 }
+@media (max-width: 680px) {
+  .menu {
+    display: none;
+  }
+  .rightBlock {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .active {
+  }
+  .mobileMenu {
+    display: grid;
+    gap: 10px;
+  }
 }

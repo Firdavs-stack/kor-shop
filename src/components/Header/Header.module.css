@@ -1,16 +1,16 @@
-.header{
-    margin-bottom: 50px;
+.header {
+  margin-bottom: 50px;
 }
-.slider{
-    position: relative;
-    z-index: 0 !important;
+.slider {
+  position: relative;
+  z-index: 0 !important;
 }
-.slide{
-    min-width: 100%;
-    height: 500px !important;
+.slide {
+  min-width: 100%;
+  height: 500px !important;
 }
-.slideImage{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

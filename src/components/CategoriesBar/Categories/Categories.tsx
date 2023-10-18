@@ -9,10 +9,10 @@ const Categories = ({ isOpen }: any) => {
   ];
   return (
     <div className={classNames(styles.categories, isOpen ? styles.active : false)}>
-      <div className="relative grid">
-      {categories.map((item) => (
-        <CategoryItem key={item.label} label={item.label} subcategories={item.subcategories} />
-      ))}
+      <div className='relative grid'>
+        {categories.map((item) => (
+          <CategoryItem key={item.label} label={item.label} subcategories={item.subcategories} />
+        ))}
       </div>
     </div>
   );

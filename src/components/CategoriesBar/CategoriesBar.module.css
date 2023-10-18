@@ -5,10 +5,24 @@
   background-color: var(--light-gray);
   margin-bottom: 30px;
 }
-.barInner{
+.barInner {
   display: grid;
-  grid-template-columns: auto minmax(auto,700px);
+  grid-template-columns: auto minmax(auto, 700px);
   justify-content: space-between;
   height: 100%;
   align-items: center;
+}
+
+@media (max-width: 580px) {
+  .barInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .catBar {
+    height: auto;
+    padding: 20px 0;
+  }
 }

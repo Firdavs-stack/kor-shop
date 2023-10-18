@@ -35,6 +35,18 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <ul className={classNames("navbar__mobile-menu", styles.mobileMenu)}>
+            {menuLinks.map((item) => (
+              <li
+                key={item.label}
+                className={classNames(
+                  "h-full flex justify-center items-center cursor-pointer",
+                  router.pathname == item.href ? classNames(styles.active, "px-4") : false,
+                )}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </nav>

@@ -6,24 +6,26 @@
   height: auto;
   padding: 5px;
 }
-.burger.active .line:last-child{
+.burger.active .line:last-child {
   opacity: 0;
 }
-.burger.active .line:first-child{
+.burger.active .line:first-child {
   top: 4px;
   transform: rotate(45deg);
 }
-.burger.active .line:nth-child(2){
+.burger.active .line:nth-child(2) {
   bottom: 4px;
   transform: rotate(-45deg);
 }
 .burger .line {
   position: relative;
-  background-color: var(--black);;
+  background-color: var(--black);
   border-radius: 1.5px;
   height: 3px;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 .burger .line:first-child,
 .line:nth-child(2) {

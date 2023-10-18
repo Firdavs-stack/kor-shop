@@ -3,7 +3,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <div>
-      <Link href='/'>
+      <Link className='w-full flex justify-center items-center' href='/'>
         <img alt='logo image' />
       </Link>
     </div>
