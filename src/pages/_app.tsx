@@ -8,7 +8,7 @@ import { apiSlice } from "@/redux/api/apiSlice";
 export default function App({ Component, pageProps }: AppProps) {
   return <ApiProvider api={apiSlice}>
     <Provider store={store}>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
   </Provider>
   </ApiProvider>
 }
