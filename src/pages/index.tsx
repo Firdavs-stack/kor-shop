@@ -64,5 +64,5 @@ export default function Home() {
     )
   }
 
-  return <div>jopa</div>;
+  return <div>Loader</div>;
 }
