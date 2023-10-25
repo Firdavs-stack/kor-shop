@@ -1,0 +1,20 @@
+.btn{
+    width: 100%;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bright-green);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 14px;
+}
+.btn.outlined{
+    border: 2px solid var(--bright-green);
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright-green);
+    background-color: unset;
+}
