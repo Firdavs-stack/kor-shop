@@ -13,6 +13,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { useGetCategoriesQuery, useGetProductsQuery, useGetSubCategoriesQuery, useGetBaseCategoriesQuery } from '@/redux/api/apiSlice';
 import { getProducts } from '@/redux/features/products/productsSlice';
 import { getCategories } from '@/redux/features/categories/categoriesSlice';
+import Login from '@/components/shared/Login/Login';
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -60,6 +61,7 @@ export default function Home() {
           </Container>
         </div>
         <Footer />
+        <Login/>
       </main>
     )
   }
