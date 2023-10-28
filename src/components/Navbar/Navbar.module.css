@@ -10,7 +10,13 @@
 }
 .rightBlock {
   display: grid;
-  grid-template-columns: auto minmax(auto, 800px);
+  grid-template-columns: auto minmax(auto, 800px) auto;
+}
+.login{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 812px) {

@@ -61,7 +61,6 @@ export default function Home() {
           </Container>
         </div>
         <Footer />
-        <Login/>
       </main>
     )
   }

@@ -1,11 +1,17 @@
 import Link from "next/link";
 import Logo from "../shared/Logo/Logo";
+import Person from '../../../public/icons/person.svg';
 import styles from "./Navbar.module.css";
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import Container from "../shared/Logo/Container/Container";
+import { useDispatch, useSelector } from "react-redux";
+import Login from "../shared/Login/Login";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen,setIsOpen] = useState(false);
+    console.log(isOpen);
   const router = useRouter();
   const menuLinks = [
     { label: "О магазине", href: "/" },
@@ -14,8 +20,12 @@ const Navbar = () => {
     { label: "Скидки", href: "/discounts" },
     { label: "Контакты", href: "/contacts" },
   ];
+  const handleClick = () => {
+    setIsOpen(false);
+  }
   return (
-    <nav className={styles.navbar}>
+    <div>
+      <nav className={styles.navbar}>
       <Container>
         <div className={classNames("flex items-center justify-between w-full h-16", styles.rightBlock)}>
           <Logo />
@@ -47,9 +57,19 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <div className={styles.login}>
+            <Person/>
+            <div onClick={() => {
+              setIsOpen(true);
+            }} className={styles.loginMenu}>
+              Вход/регистрация
+            </div>
+          </div>
         </div>
       </Container>
     </nav>
+    {isOpen ? <Login onClick={handleClick} /> : null}
+    </div>
   );
 };
 

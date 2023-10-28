@@ -9,6 +9,11 @@
     color: var(--white);
     font-size: 14px;
 }
+.btn:disabled{
+    background-color: var(--medium-gray) !important;
+    color: var(--white) !important;
+    border: unset !important;
+}
 .btn.outlined{
     border: 2px solid var(--bright-green);
     height: 41px;

@@ -13,7 +13,7 @@ const Categories = ({ isOpen }: any) => {
   return (
     <div className={classNames(styles.categories, isOpen ? styles.active : false)}>
       <div className='relative grid'>
-        {state?.baseCategories.map((item:any) => (
+        {state?.baseCategories?.map((item:any) => (
           <SubcategoryItem key={item.id} label={item.name} subcategories={state?.subCategories.filter((subCategory:any) => subCategory.base_category == item.id)} />
         ))}
       </div>
