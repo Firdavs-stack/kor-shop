@@ -6,9 +6,11 @@ import store from "@/redux/store";
 import { apiSlice } from "@/redux/api/apiSlice";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <ApiProvider api={apiSlice}>
-    <Provider store={store}>
+  return (
+    <ApiProvider api={apiSlice}>
+      <Provider store={store}>
         <Component {...pageProps} />
-  </Provider>
-  </ApiProvider>
+      </Provider>
+    </ApiProvider>
+  );
 }

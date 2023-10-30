@@ -1,44 +1,44 @@
-.item{
-    padding: 20px;
-    box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
-    border-radius: 10px;
+.item {
+  padding: 20px;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+  border-radius: 10px;
 }
-.imagebox{
-    max-width: 100%;
-    height: 180px;
+.imagebox {
+  max-width: 100%;
+  height: 180px;
 }
-.imagebox img{
-    width: 100%;
-    height: 100%;
+.imagebox img {
+  width: 100%;
+  height: 100%;
 }
-.title{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-.priceBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.basket{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
-    border-radius: 10px;
-    cursor: pointer;
+.basket {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+  border-radius: 10px;
+  cursor: pointer;
 }
-.avSelector{
-    display: flex;
-    gap: 3px;
+.avSelector {
+  display: flex;
+  gap: 3px;
 }
-.avBtn{
-    width: 30px;
-    box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
-    border-radius: 10px;
+.avBtn {
+  width: 30px;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+  border-radius: 10px;
 }

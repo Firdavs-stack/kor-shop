@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: auto minmax(auto, 800px) auto;
 }
-.login{
+.login {
   cursor: pointer;
   display: flex;
   align-items: center;

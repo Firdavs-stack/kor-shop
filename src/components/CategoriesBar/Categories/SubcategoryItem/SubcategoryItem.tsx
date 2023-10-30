@@ -9,7 +9,7 @@ interface SubcategoryItem {
   subcategories: Array<any>;
 }
 const SubcategoryItem = ({ label, subcategories }: SubcategoryItem) => {
-  const state = useSelector((state:any) => state.categories);
+  const state = useSelector((state: any) => state.categories);
 
   console.log(state.baseCategories);
   const [isShown, setIsShown] = useState(false);
@@ -25,7 +25,12 @@ const SubcategoryItem = ({ label, subcategories }: SubcategoryItem) => {
       {label}
       <div className={styles.subcategories}>
         {subcategories.map((subcategory) => (
-          <CategoryItem key={subcategory.id} label={subcategory.name} className={styles.subSubcategoryItem} categories={state?.categories.filter((category:any) => category.base_category == subcategory.id)}/>
+          <CategoryItem
+            key={subcategory.id}
+            label={subcategory.name}
+            className={styles.subSubcategoryItem}
+            categories={state?.categories.filter((category: any) => category.base_category == subcategory.id)}
+          />
         ))}
       </div>
     </div>
