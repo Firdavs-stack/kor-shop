@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
               </div>
             ) : (
-              <div>jopa</div>
+              <div>Authorized</div>
             )}
           </div>
         </Container>
