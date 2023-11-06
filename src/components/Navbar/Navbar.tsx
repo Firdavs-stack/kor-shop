@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Container from "../shared/Logo/Container/Container";
 import { useDispatch, useSelector } from "react-redux";
 import Login from "../shared/Login/Login";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getCookie } from "cookies-next";
 
 const Navbar = () => {
@@ -15,7 +15,16 @@ const Navbar = () => {
   const token = getCookie("token") || state?.token;
   console.log("opeyne", token);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+
+  useEffect(() => {
+    if(isOpen){
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight='16px'
+    }else{
+      document.body.style.overflow = 'unset';
+      document.body.style.paddingRight='unset';
+    }
+  },[isOpen])
   const router = useRouter();
   const menuLinks = [
     { label: "О магазине", href: "/" },

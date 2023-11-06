@@ -56,7 +56,7 @@ const Login = ({ onClick }: any) => {
         break;
     }
   };
-  const [isSignIn, setIsSignIn] = useState(false);
+  const [isSignIn, setIsSignIn] = useState(true);
 
   const [initToken] = useInitTokenMutation();
   const [createToken] = useCreateTokenMutation();
