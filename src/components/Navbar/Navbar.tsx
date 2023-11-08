@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Login from "../shared/Login/Login";
 import { useEffect, useState } from "react";
 import { getCookie } from "cookies-next";
+import { useLogoutProfileQuery } from "@/redux/api/apiSlice";
 
 const Navbar = () => {
   const state = useSelector((state: any) => state.auth);
@@ -16,15 +17,18 @@ const Navbar = () => {
   console.log("opeyne", token);
   const [isOpen, setIsOpen] = useState(false);
 
+  const { data: logoutData, isLoading } = useLogoutProfileQuery();
+  console.log(logoutData);
+
   useEffect(() => {
-    if(isOpen){
-      document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight='16px'
-    }else{
-      document.body.style.overflow = 'unset';
-      document.body.style.paddingRight='unset';
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = "16px";
+    } else {
+      document.body.style.overflow = "unset";
+      document.body.style.paddingRight = "unset";
     }
-  },[isOpen])
+  }, [isOpen]);
   const router = useRouter();
   const menuLinks = [
     { label: "О магазине", href: "/" },
@@ -82,7 +86,10 @@ const Navbar = () => {
                 </div>
               </div>
             ) : (
-              <div>Authorized</div>
+              <div>
+                <div>Authorized</div>
+                <div className={styles.basket}>Корзина</div>
+              </div>
             )}
           </div>
         </Container>

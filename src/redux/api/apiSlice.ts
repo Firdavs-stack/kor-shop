@@ -48,6 +48,21 @@ export const apiSlice: any = createApi({
         },
       }),
     }),
+    logoutProfile: builder.query({
+      query: () => "auth/token/logout/",
+    }),
+    getBasketProducts: builder.query({
+      query: () => ({
+        url:"cart/order/",
+        method: "GET",
+      }),
+    }),
+    createBasket: builder.mutation({
+      query: () => ({
+        url: 'cart/order/',
+        method: 'POST',
+      })
+    })
   }),
 });
 
@@ -58,4 +73,7 @@ export const {
   useGetBaseCategoriesQuery,
   useInitTokenMutation,
   useCreateTokenMutation,
+  useGetBasketProductsQuery,
+  useLogoutProfileQuery,
+  useCreateBasketMutation,
 } = apiSlice;

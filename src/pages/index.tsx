@@ -19,6 +19,7 @@ import {
 import { getProducts } from "@/redux/features/products/productsSlice";
 import { getCategories } from "@/redux/features/categories/categoriesSlice";
 import Login from "@/components/shared/Login/Login";
+import MainLayout from "./layout";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -40,21 +41,13 @@ export default function Home() {
 
   if (!isLoading && !isBaseCategoriesLoading && !isCategoriesLoading && !isSubCategoriesLoading) {
     return (
-      <main className={classNames(raleway.className, styles.main)}>
-        <header>
-          <Navbar />
-          <CategoriesBar />
-          <Header />
-        </header>
-        <div className='content-box'>
-          <Container>
-            <h1 className='text-center text-3xl mb-5'>Интернет магазин</h1>
-
-            <ContentBox title='Популярные товары' />
-          </Container>
-        </div>
-        <Footer />
-      </main>
+      <MainLayout>
+        <Header />
+        <Container>
+        <h1 className='text-center text-3xl mb-5'>Интернет магазин</h1>
+        <ContentBox title='Популярные товары' />
+        </Container>
+      </MainLayout>
     );
   }
 

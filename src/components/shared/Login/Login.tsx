@@ -57,7 +57,6 @@ const Login = ({ onClick }: any) => {
     }
   };
   const [isSignIn, setIsSignIn] = useState(true);
-
   const [initToken] = useInitTokenMutation();
   const [createToken] = useCreateTokenMutation();
 
@@ -77,8 +76,8 @@ const Login = ({ onClick }: any) => {
     await createToken({ username: name, email: email, password: password })
       .then((res: any) => console.log("user created", res))
       .catch((e: any) => console.log(e.message));
+    await tokenInitialization(name, password);
     setIsLoading(false);
-    tokenInitialization(name, password);
   };
   return (
     <div className={styles.wrapper}>
